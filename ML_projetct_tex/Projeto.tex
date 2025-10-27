@@ -1,0 +1,43 @@
+\documentclass[a4paper, 10pt, twoside, openany]{book}
+
+% -------------------------------------------------------------------------
+% GENERAL NOTES
+% To compile this file, you need to have at least one citation and one defined acronym
+% Define one citation in 'Sections/reference_list.bib' and use any of the \cite commands anywhere in the text to avoid errors
+% Define one acronym in 'Sections/4.5-list_of_acronyms.tex' and use \an{defined-acronym} anywhere in the text to avoid errors
+% -------------------------------------------------------------------------
+
+% Configurations for the TeX template
+\input{Sections/0.1-configurations}
+
+% ----------------------------------------------------------------------------------------------------------------------
+% Defining custom commands
+\newcommand{\red}[1]{\textbf{\textcolor{red}{#1}}}  % Command for red text
+\newcommand{\hsp}{\hspace{15pt}}  % Command for horizontal space
+\renewcommand{\geq}{\geqslant}  % Redefine >= symbol
+\renewcommand{\leq}{\leqslant}  % Redefine <= symbol
+\newcommand{\ttt}[1]{\texttt{#1}} % Alias for \texttt
+\DeclareSIUnit{\angstrom}{\textup{\AA}} % Angstrom unit, to be used with the siunitx package
+\newcommand{\ionn}[2]{{\textrm{#1}}{\textrm{\sc #2}}} % Commando to print ions, for ex. [\ionn{O}{ii}]
+\newcommand{\review}[1]{\textbf{\textcolor{orange}{#1}}}
+\DeclareMathOperator*{\aprox}{\approx}  % Custom operator for 'approximately equal'
+
+% ----------------------------------------------------------------------------------------------------------------------
+% Configurations
+\newcommand{\authorname}{Pierre Augusto Ré Martho} % Author name
+
+% Adicionando o comando \raggedbottom para evitar espaços em branco no meio da página
+\raggedbottom
+
+% ----------------------------------------------------------------------------------------------------------------------
+% Document body
+\begin{document}
+%\pagevalues
+\onehalfspacing
+% Content pages
+\input{Sections/1-Projeto}
+
+\newpage
+This is an example citation~\cite{example-reference}.
+
+\end{document}
