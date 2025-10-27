@@ -28,7 +28,6 @@ O projeto utiliza técnicas de aprendizado de máquina para:
 ```
 ├── README.md              # Este arquivo
 ├── photozs.ipynb         # Notebook principal do projeto
-├── photozs_rodri.ipynb   # Notebook adicional/alternativo
 ├── auxiliar.py           # Funções auxiliares
 └── init                  # Arquivo de inicialização
 ```
